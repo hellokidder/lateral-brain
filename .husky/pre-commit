@@ -1,0 +1,2 @@
+# 运行 lint-staged 进行代码检查和格式化
+npx lint-staged
