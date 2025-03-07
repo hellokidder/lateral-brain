@@ -1,13 +1,45 @@
 // Place your settings in this file to overwrite default and user settings.
 {
-    "files.exclude": {
-        "out": false, // set this to true to hide the "out" folder with the compiled JS files
-        "dist": false // set this to true to hide the "dist" folder with the compiled JS files
-    },
-    "search.exclude": {
-        "out": true, // set this to false to include "out" folder in search results
-        "dist": true // set this to false to include "dist" folder in search results
-    },
-    // Turn off tsc task auto detection since we have the necessary tasks as npm scripts
-    "typescript.tsc.autoDetect": "off"
+  "files.exclude": {
+    "out": false, // set this to true to hide the "out" folder with the compiled JS files
+    "dist": false // set this to true to hide the "dist" folder with the compiled JS files
+  },
+  "search.exclude": {
+    "out": true, // set this to false to include "out" folder in search results
+    "dist": true // set this to false to include "dist" folder in search results
+  },
+  // Turn off tsc task auto detection since we have the necessary tasks as npm scripts
+  "typescript.tsc.autoDetect": "off",
+  "editor.formatOnSave": true,
+  "editor.formatOnType": true,
+  "editor.codeActionsOnSave": {
+    // #每次保存的时候将代码按eslint格式进行修复
+    // "source.fixAll.eslint": "always",
+    // "eslint.autoFixOnSave": "always"
+
+    "source.fixAll.tslint": "explicit",
+    "source.fixAll.eslint": "explicit"
+  },
+  // "eslint.validate": ["javascript", "javascriptreact", "typescript", "typescriptreact"]
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.quickSuggestions": {
+    "strings": "on"
+  }
 }
