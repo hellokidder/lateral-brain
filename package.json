@@ -3,6 +3,11 @@
   "displayName": "Lateral Brain",
   "description": "",
   "version": "0.0.1",
+  "publisher": "hellokidder",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:hellokidder/lateral-brain.git"
+  },
   "engines": {
     "vscode": "^1.98.0"
   },
