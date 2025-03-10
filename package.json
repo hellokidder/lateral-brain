@@ -17,7 +17,26 @@
         "command": "lateral-brain.helloWorld",
         "title": "Hello World"
       }
-    ]
+    ],
+    "viewsContainers": {
+      "activitybar": [
+        {
+          "id": "lateral-brain-sidebar",
+          "title": "Lateral Brain",
+          "icon": "media/icon.svg"
+        }
+      ]
+    },
+    "views": {
+      "lateral-brain-sidebar": [
+        {
+          "icon": "media/icon.svg",
+          "type": "webview",
+          "id": "ChatView",
+          "name": "Webview"
+        }
+      ]
+    }
   },
   "scripts": {
     "vscode:prepublish": "npm run package",
