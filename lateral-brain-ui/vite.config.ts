@@ -4,6 +4,13 @@ import react from '@vitejs/plugin-react-swc';
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
+  server: {
+    port: 5173,
+    hmr: true,
+    headers: {
+      'Access-Control-Allow-Origin': '*',
+    },
+  },
   build: {
     outDir: 'build',
     rollupOptions: {
@@ -15,5 +22,6 @@ export default defineConfig({
       },
     },
     chunkSizeWarningLimit: 100000,
+    // Add logging for build start and end
   },
 });
